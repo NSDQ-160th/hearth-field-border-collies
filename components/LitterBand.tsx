@@ -5,20 +5,18 @@ export function LitterBand() {
     <section className="band" aria-labelledby="litter-band-heading">
       <div className="wrap band-inner">
         <div>
-          <p className="eyebrow">The Current Litter</p>
+          <p className="eyebrow">This litter</p>
           <h2 className="display" id="litter-band-heading">
-            Six puppies. Ready to be matched.
+            Six puppies. Born in our house.
           </h2>
           <p>
-            Six Border Collie puppies born {site.birthDate}. Dam is{" "}
-            {site.dam.name}, cleared OFA hips/elbows and CAER, genetic panel on
-            file. Sire is {site.sire.name}, same panel. Individual profiles
-            below — markings, temperament notes, and which ones are still
-            available. Go-home date: {site.goHomeDate}.
+            Six Border Collie puppies born {site.birthDate}. Mom is{" "}
+            {site.dam.name}. Dad is {site.sire.name}. Photos and a few notes on
+            each one are below. Ready to go home {site.goHomeDate}.
           </p>
         </div>
         <a href="#litter" className="text-link">
-          See individual puppy profiles
+          See each puppy
         </a>
       </div>
     </section>

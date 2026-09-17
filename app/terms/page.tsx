@@ -11,10 +11,9 @@ export default function TermsPage() {
       </p>
       <h1>Terms</h1>
       <p>
-        Submitting an inquiry is a request to be considered for a puppy. It is
-        not a purchase, a hold, or a contract. A hold is arranged only after we
-        approve the home, off this website. Puppy availability can change.
-        Placement decisions stay with the kennel.
+        Sending a note is just that — a note. It is not a purchase or a
+        contract. We talk first, in person or by phone. Puppies can be spoken
+        for. We decide together whether a home is a fit.
       </p>
       <p>
         The written contract you receive before pickup is the governing

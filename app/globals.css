@@ -281,9 +281,10 @@ button {
 
 .brand-name {
   font-family: var(--font-serif), Fraunces, Georgia, serif;
-  font-size: 1.15rem;
+  font-size: 1.08rem;
   font-weight: 500;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .brand-sub {

@@ -16,9 +16,9 @@ const sans = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: `${site.name} — Raised by Hand`,
+  title: `${site.name} — Hagerstown, Maryland`,
   description:
-    "Editorial kennel page for a working-farm Border Collie litter. Health-tested parents, six puppies, matched to homes that will train.",
+    "Riley and Falcor’s August 2026 litter, raised in our house in Hagerstown with our kids. Six Border Collie puppies ready October 9.",
   icons: { icon: "/favicon.svg" },
 };
 

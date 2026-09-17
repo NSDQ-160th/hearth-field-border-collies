@@ -5,18 +5,18 @@ export function Story() {
     <section className="section" id="story">
       <div className="wrap">
         <div className="story-head">
-          <p className="eyebrow">The Story</p>
+          <p className="eyebrow">Our Story</p>
           <h2 className="display">
-            Twelve years of learning
+            Two dogs,
             <br />
-            <em>what a dog deserves.</em>
+            <em>and a house full of kids.</em>
           </h2>
           <hr className="hairline" />
         </div>
 
         <div className="timeline">
           {storyChapters.map((chapter) => (
-            <article className="chapter" key={chapter.year}>
+            <article className="chapter" key={`${chapter.year}-${chapter.title}`}>
               <span className="chapter-year">{chapter.year}</span>
               <div className="chapter-media">
                 <img src={chapter.image} alt={chapter.alt} />

@@ -4,8 +4,8 @@ export function Testimonials() {
   return (
     <section className="section" id="testimonials">
       <div className="wrap">
-        <p className="eyebrow">Forever Homes</p>
-        <h2 className="display">The families write back.</h2>
+        <p className="eyebrow">People we know</p>
+        <h2 className="display">They have been to the house.</h2>
         <div className="quote-grid">
           {testimonials.map((t) => (
             <article className="quote-card" key={t.who}>
@@ -23,8 +23,8 @@ export function Testimonials() {
           ))}
         </div>
         <p className="quiet">
-          These are families we can put you in touch with before you place a
-          hold.
+          We can put you in touch with people who have met Riley and Falcor
+          before you decide.
         </p>
       </div>
     </section>

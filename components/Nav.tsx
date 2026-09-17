@@ -31,7 +31,7 @@ export function Nav() {
         </nav>
 
         <a href="#inquire" className="btn btn-rose nav-cta">
-          Reserve a Puppy
+          Ask about a puppy
         </a>
 
         <button
@@ -62,7 +62,7 @@ export function Nav() {
             </a>
           ))}
           <a href="#inquire" className="btn btn-rose" onClick={close}>
-            Reserve a Puppy
+            Ask about a puppy
           </a>
         </nav>
       ) : null}

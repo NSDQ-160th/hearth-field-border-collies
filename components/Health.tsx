@@ -4,20 +4,21 @@ export function Health() {
   return (
     <section className="section" id="health">
       <div className="wrap">
-        <p className="eyebrow">Health &amp; Standards</p>
+        <p className="eyebrow">Health</p>
         <h2 className="display">
-          We test everything.
+          We will show you
           <br />
-          <em>We hide nothing.</em>
+          <em>the paperwork.</em>
         </h2>
         <p className="lede" style={{ marginTop: "1.1rem" }}>
-          Every result is available to prospective buyers before a hold is
-          placed. Ask for the raw PDFs — we send them the same day.
+          Riley and Falcor have been to the vet. If you want the records, ask.
+          We will email what we have. This page does not invent certificate
+          numbers.
         </p>
 
         <div className="health-grid">
           <div className="health-col">
-            <h3>Genetic &amp; Structural Clearances</h3>
+            <h3>What we can share</h3>
             {clearances.map((row) => (
               <div className="clearance" key={row.label}>
                 <div>
@@ -28,14 +29,14 @@ export function Health() {
               </div>
             ))}
             <p className="note-box">
-              Original certificates on file. OFA numbers, CAER dates, and DNA
-              lab reports available on request. Do not invent certificate
-              numbers anywhere on this site.
+              Original papers stay with us. If you are serious about a puppy, we
+              will send copies. We do not post registration numbers on the
+              internet.
             </p>
           </div>
 
           <div className="health-col">
-            <h3>Puppy Curriculum Milestones</h3>
+            <h3>Life in the house</h3>
             <div className="curric">
               {curriculum.map((item) => (
                 <div className="curric-item" key={item.when}>
@@ -48,7 +49,7 @@ export function Health() {
             <figure className="film-card">
               <img
                 src="/images/health-week3.jpg"
-                alt="A young Border Collie standing in a hay field at the farm"
+                alt="A young Border Collie in the backyard grass"
               />
               <span className="play" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="#F5F0E3">
@@ -56,7 +57,7 @@ export function Health() {
                 </svg>
               </span>
               <figcaption className="film-caption">
-                Week 3 noise protocol · filmed at the farm.
+                The pups in the backyard.
               </figcaption>
             </figure>
           </div>

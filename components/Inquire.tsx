@@ -5,7 +5,6 @@ import {
   householdTypes,
   NO_PREFERENCE,
   puppies,
-  site,
 } from "@/lib/site";
 import { useInquiry } from "@/lib/inquiry";
 
@@ -30,7 +29,7 @@ export function Inquire() {
 
   const puppyLabel = useMemo(() => {
     if (!submittedFor || submittedFor === NO_PREFERENCE) {
-      return "no preference / a future litter";
+      return "a puppy";
     }
     const match = puppies.find((p) => p.id === submittedFor);
     return match?.name ?? submittedFor;
@@ -63,11 +62,11 @@ export function Inquire() {
   return (
     <section className="section inquire" id="inquire">
       <div className="wrap">
-        <p className="eyebrow">Reserve a Puppy</p>
-        <h2 className="display">Tell us about the home.</h2>
+        <p className="eyebrow">Ask about a puppy</p>
+        <h2 className="display">Tell us about your home.</h2>
         <p className="lede" style={{ marginTop: "0.9rem" }}>
-          We match pups to people, not the other way around. Fill this in and we
-          will reply within one business day. A hold is not a checkout.
+          We would rather talk than take a card number. Fill this in and we
+          will write back. This is not a checkout.
         </p>
 
         <form className="form" onSubmit={onSubmit} noValidate>
@@ -125,7 +124,7 @@ export function Inquire() {
           </div>
 
           <div className="field">
-            <label htmlFor="preferred-puppy">Preferred puppy</label>
+            <label htmlFor="preferred-puppy">Which puppy</label>
             <select
               id="preferred-puppy"
               name="puppy"
@@ -136,10 +135,9 @@ export function Inquire() {
               {puppies.map((p) => (
                 <option key={p.id} value={p.id}>
                   {p.name}
-                  {p.status === "reserved" ? " (reserved)" : ""}
                 </option>
               ))}
-              <option value={NO_PREFERENCE}>No preference / future litter</option>
+              <option value={NO_PREFERENCE}>No preference / just saying hello</option>
             </select>
           </div>
 
@@ -162,7 +160,7 @@ export function Inquire() {
 
           <div className="field">
             <label htmlFor="experience">
-              Experience with herding or high-drive dogs
+              Have you had a Border Collie or a busy dog before?
             </label>
             <input
               id="experience"
@@ -184,19 +182,17 @@ export function Inquire() {
 
           <div>
             <button type="submit" className="btn btn-rose">
-              Request This Puppy
+              Send a note
             </button>
             <p className="form-note">
-              We do not take payment on this page. Holds are arranged after we
-              approve the home.
+              This page does not take payment. We will talk first.
             </p>
           </div>
         </form>
 
         {submitted ? (
           <p className="success" role="status" aria-live="polite">
-            We received your request for {puppyLabel}. We’ll reply within one
-            business day.
+            We got your note about {puppyLabel}. We’ll write back soon.
           </p>
         ) : null}
       </div>

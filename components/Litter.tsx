@@ -24,8 +24,8 @@ export function Litter() {
             <p className="eyebrow">{site.litterMonthYear} Litter</p>
             <h2 className="display">Meet the pups.</h2>
             <p className="lede" style={{ marginTop: "0.85rem" }}>
-              6 puppies born {site.birthDate}. Dam: {site.dam.name}. Sire:{" "}
-              {site.sire.name}. Go-home: {site.goHomeDate}.
+              Six puppies born {site.birthDate}. Mom: {site.dam.name}. Dad:{" "}
+              {site.sire.name}. Ready to go home {site.goHomeDate}.
             </p>
           </div>
           <div className="filters" role="group" aria-label="Filter puppies">
@@ -54,7 +54,7 @@ export function Litter() {
             return (
               <article className="puppy-card" key={pup.id}>
                 <div className="puppy-photo" data-slot={pup.slot}>
-                  <img src={pup.image} alt={`${pup.name}, ${pup.color}`} />
+                  <img src={pup.image} alt={pup.alt} />
                   <span className={available ? "badge badge-avail" : "badge badge-held"}>
                     {available ? "Available" : "Reserved"}
                   </span>
@@ -64,9 +64,6 @@ export function Litter() {
                 </div>
                 <div className="puppy-body">
                   <h3>{pup.name}</h3>
-                  <p className="puppy-weight">
-                    {pup.weight} at {pup.age}
-                  </p>
                   <p className="puppy-color">{pup.color}</p>
                   <p>
                     <strong>Temperament.</strong> {pup.temperament}
@@ -80,11 +77,11 @@ export function Litter() {
                       className="btn btn-rose"
                       onClick={() => requestPuppy(pup.id)}
                     >
-                      Reserve {pup.name} — {site.deposit} Deposit
+                      Ask about {pup.name}
                     </button>
                   ) : (
                     <button type="button" className="btn" disabled>
-                      Reserved
+                      Spoken for
                     </button>
                   )}
                 </div>

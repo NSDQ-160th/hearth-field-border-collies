@@ -22,14 +22,14 @@ export function StickyBar() {
       <div className="sticky-inner">
         <p>
           {availableCount} puppies available from the {site.litterMonthYear}{" "}
-          litter. Go-home: {site.goHomeDate}.
+          litter. Ready to go home {site.goHomeDate}.
         </p>
         <div className="sticky-actions">
           <a href="#inquire" className="btn-ghost">
-            Join Wait List
+            Write us
           </a>
           <a href="#litter" className="btn btn-rose">
-            Reserve Your Puppy
+            See the puppies
           </a>
         </div>
       </div>

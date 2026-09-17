@@ -1,12 +1,10 @@
-# Hearth & Field Border Collies
+# Torrence Family Border Collies
 
-Single-purpose editorial site for one current litter of six working Border Collie puppies.
+Family site for Riley and Falcor’s August 2026 litter in Hagerstown, Maryland.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3456](http://localhost:3456).
-
-Kennel copy, dates, price, and contact live in `lib/site.ts`. Generated photographs live in `public/images/` with slots labeled `Parent-Dam`, `Parent-Sire`, and `Puppy-1` through `Puppy-6` so they can be replaced with real photos.
+Copy, dates, price, and contact live in `lib/site.ts`. Photos live in `public/images/` with slots `Parent-Dam`, `Parent-Sire`, and `Puppy-1` through `Puppy-6`.
