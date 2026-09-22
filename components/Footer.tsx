@@ -17,8 +17,6 @@ export function Footer() {
         </p>
         <p>
           <a href={`tel:${tel(site.phone)}`}>{site.phone}</a>
-          {" · "}
-          <a href={`tel:${tel(site.phone2)}`}>{site.phone2}</a>
         </p>
         <p className="footer-tag">{site.tagline}</p>
         <p className="form-note" style={{ marginTop: "1rem" }}>

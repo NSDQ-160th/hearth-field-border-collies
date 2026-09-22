@@ -4,7 +4,6 @@ export const site = {
   location: "Hagerstown, Maryland",
   email: "aatkat1210@gmail.com",
   phone: "(951) 488-4008",
-  phone2: "(561) 512-5640",
   year: 2026,
   dam: {
     name: "Riley",
