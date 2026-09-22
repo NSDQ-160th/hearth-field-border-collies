@@ -163,8 +163,8 @@ export const storyChapters = [
   {
     year: "2026",
     title: "This litter",
-    image: "/images/story-2020.jpg",
-    alt: "Border Collie puppies on a rug with toys in the house",
+    image: "/images/hero-puppies-straw.jpeg",
+    alt: "The litter piled together at home",
     body: "These six puppies were born in our house on August 14, 2026. We hold them every day. The kids help. They will be ready to go home October 9. If one of them is meant for you, write us — we would rather talk than sell a puppy off a webpage.",
   },
 ] as const;
