@@ -110,8 +110,8 @@ export const puppies: Puppy[] = [
     color: "Red and lilac merle",
     temperament: "Bold, playful, always in the mix.",
     idealHome: "A home that will run, train, and laugh with him.",
-    image: "/images/puppy-5-bramble.jpg",
-    alt: "Thor, red and lilac merle male Border Collie puppy",
+    image: "/images/puppy-thor.jpg",
+    alt: "Thor, a pale merle Border Collie puppy looking up from the patio",
   },
   {
     id: "loki",
@@ -122,8 +122,8 @@ export const puppies: Puppy[] = [
     color: "Red and lilac merle",
     temperament: "Mischief with a good heart. Finds the toy you hid and brings it back.",
     idealHome: "A family that wants a funny, sharp boy and will give him a job.",
-    image: "/images/puppy-6-wren.jpg",
-    alt: "Loki, red and lilac merle male Border Collie puppy",
+    image: "/images/puppy-loki.jpg",
+    alt: "Loki, a cream Border Collie puppy with blue eyes",
   },
 ];
 
