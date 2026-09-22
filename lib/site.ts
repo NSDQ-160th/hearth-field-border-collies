@@ -84,8 +84,8 @@ export const puppies: Puppy[] = [
     color: "Lilac merle",
     temperament: "Gentle spark. Checks in with people, then goes back to play.",
     idealHome: "A family ready to raise a smart girl with patience and walks.",
-    image: "/images/puppy-3-pip.jpg",
-    alt: "Aurora, lilac merle female Border Collie puppy",
+    image: "/images/puppy-1-aurora.jpeg",
+    alt: "Aurora, a merle Border Collie puppy on the patio",
   },
   {
     id: "tank",
