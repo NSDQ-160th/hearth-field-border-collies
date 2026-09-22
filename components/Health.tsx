@@ -27,11 +27,11 @@ export function Health() {
           </div>
           <figure className="film-card">
             <img
-              src="/images/health-week3.jpg"
-              alt="A Border Collie puppy sitting in the grass"
+              src="/images/health-puppy.jpg"
+              alt="A merle Border Collie puppy walking on the front walk"
             />
             <figcaption className="film-caption">
-              The pups in the backyard.
+              Out on the front walk.
             </figcaption>
           </figure>
         </div>
