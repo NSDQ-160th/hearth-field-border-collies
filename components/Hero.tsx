@@ -14,15 +14,15 @@ export function Hero() {
           </figure>
           <figure className="tile tile-pups">
             <img
-              src="/images/hero-puppies-straw.jpg"
-              alt="A pile of Border Collie puppies sleeping together in the house"
+              src="/images/story-2020.jpg"
+              alt="The litter sleeping together on a rug in the house"
             />
             <span className="tile-shade" />
           </figure>
           <figure className="tile tile-field">
             <img
-              src="/images/hero-field.jpg"
-              alt="Falcor, a black and white Border Collie, standing in the yard"
+              src="/images/story-2012.jpg"
+              alt="Riley standing in the grass at home"
             />
             <span className="tile-shade" />
             <div className="hero-headline">
@@ -34,22 +34,22 @@ export function Hero() {
           </figure>
           <figure className="tile tile-hands">
             <img
-              src="/images/hero-hands.jpg"
-              alt="Hands holding a sleepy Border Collie puppy"
+              src="/images/story-2016.jpg"
+              alt="Falcor, a black and white Border Collie, in the grass"
             />
             <span className="tile-shade" />
           </figure>
           <figure className="tile tile-herd">
             <img
-              src="/images/hero-herding.jpg"
-              alt="Falcor running across the backyard grass"
+              src="/images/story-2018.jpg"
+              alt="Riley and Falcor together in the yard"
             />
             <span className="tile-shade" />
           </figure>
           <figure className="tile tile-certs">
             <img
-              src="/images/hero-certificates.jpg"
-              alt="Vet papers on the kitchen table"
+              src="/images/parent-dam.jpg"
+              alt="Riley with the newborn litter"
             />
             <span className="tile-shade" />
           </figure>
