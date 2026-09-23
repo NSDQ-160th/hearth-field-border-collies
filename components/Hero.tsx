@@ -34,8 +34,8 @@ export function Hero() {
           </figure>
           <figure className="tile tile-hands">
             <img
-              src="/images/story-2016.jpeg"
-              alt="Falcor at home"
+              src="/images/puppy-hero.jpeg"
+              alt="The litter sleeping in a pile"
             />
             <span className="tile-shade" />
           </figure>
