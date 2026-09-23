@@ -26,6 +26,9 @@ export function Inquire() {
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
   const [submittedFor, setSubmittedFor] = useState("");
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState("");
+  const [company, setCompany] = useState("");
 
   const puppyLabel = useMemo(() => {
     if (!submittedFor || submittedFor === NO_PREFERENCE) {
@@ -45,18 +48,52 @@ export function Inquire() {
     return next;
   }
 
-  function onSubmit(e: FormEvent) {
+  async function onSubmit(e: FormEvent) {
     e.preventDefault();
     const next = validate();
     setErrors(next);
+    setSendError("");
     if (Object.keys(next).length > 0) {
       setSubmitted(false);
-      const first = document.querySelector<HTMLElement>(".field.error input, .field.error select");
+      const first = document.querySelector<HTMLElement>(
+        ".field.error input, .field.error select",
+      );
       first?.focus();
       return;
     }
-    setSubmittedFor(preferredPuppy || NO_PREFERENCE);
-    setSubmitted(true);
+
+    setSending(true);
+    try {
+      const response = await fetch("/api/inquire", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          puppy: preferredPuppy,
+          household,
+          experience,
+          message,
+          company,
+        }),
+      });
+      const result = (await response.json()) as { ok?: boolean; error?: string };
+      if (!response.ok || !result.ok) {
+        setSubmitted(false);
+        setSendError(
+          result.error || "We could not send that note. Email us directly.",
+        );
+        return;
+      }
+      setSubmittedFor(preferredPuppy || NO_PREFERENCE);
+      setSubmitted(true);
+    } catch {
+      setSubmitted(false);
+      setSendError("We could not send that note. Email us directly.");
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -70,6 +107,17 @@ export function Inquire() {
         </p>
 
         <form className="form" onSubmit={onSubmit} noValidate>
+          <div className="hp" aria-hidden="true">
+            <label htmlFor="company">Company</label>
+            <input
+              id="company"
+              name="company"
+              tabIndex={-1}
+              autoComplete="off"
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
+            />
+          </div>
           <div className={`field${errors.name ? " error" : ""}`}>
             <label htmlFor="full-name">
               Full name <span className="req">*</span>
@@ -181,12 +229,17 @@ export function Inquire() {
           </div>
 
           <div>
-            <button type="submit" className="btn btn-rose">
-              Send a note
+            <button type="submit" className="btn btn-rose" disabled={sending}>
+              {sending ? "Sending…" : "Send a note"}
             </button>
             <p className="form-note">
               This page does not take payment. We will talk first.
             </p>
+            {sendError ? (
+              <p className="field-error" role="alert">
+                {sendError}
+              </p>
+            ) : null}
           </div>
         </form>
 

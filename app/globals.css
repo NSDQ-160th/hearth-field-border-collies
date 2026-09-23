@@ -1173,6 +1173,14 @@ button {
   margin: 0.3rem 0 0;
 }
 
+.hp {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* Sticky bar */
 .sticky-bar {
   position: fixed;
