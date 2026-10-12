@@ -18,7 +18,7 @@ const sans = Manrope({
 export const metadata: Metadata = {
   title: `${site.name} — Hagerstown, Maryland`,
   description:
-    "Riley and Falcor’s August 2026 litter, raised in our house in Hagerstown with our kids. Six Border Collie puppies ready October 9.",
+    "Riley and Falcor’s August 2026 litter, raised in our house in Hagerstown with our kids. Five Border Collie puppies ready October 9.",
   icons: { icon: "/favicon.svg" },
 };
 

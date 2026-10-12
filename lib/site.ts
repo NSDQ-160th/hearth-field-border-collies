@@ -4,6 +4,7 @@ export const site = {
   location: "Hagerstown, Maryland",
   email: "aatkat1210@gmail.com",
   phone: "(951) 488-4008",
+  phone2: "(561) 512-5640",
   year: 2026,
   dam: {
     name: "Riley",
@@ -84,21 +85,8 @@ export const puppies: Puppy[] = [
     color: "Lilac merle",
     temperament: "Gentle spark. Checks in with people, then goes back to play.",
     idealHome: "A family ready to raise a smart girl with patience and walks.",
-    image: "/images/puppy-1-aurora.jpeg",
-    alt: "Aurora, a merle Border Collie puppy on the patio",
-  },
-  {
-    id: "tank",
-    slot: "Puppy-4",
-    name: "Tank",
-    sex: "male",
-    status: "available",
-    color: "White, red, and slate merle",
-    temperament:
-      "Sturdy and confident. The one who barrels into his brothers and then falls asleep on a shoe.",
-    idealHome: "Active family or someone who wants a solid boy with a big personality.",
-    image: "/images/puppy-4-quill.jpg",
-    alt: "Tank, white, red, and slate merle male Border Collie puppy",
+    image: "/images/puppy-3-pip.jpg",
+    alt: "Aurora, lilac merle female Border Collie puppy",
   },
   {
     id: "thor",
@@ -109,8 +97,8 @@ export const puppies: Puppy[] = [
     color: "Red and lilac merle",
     temperament: "Bold, playful, always in the mix.",
     idealHome: "A home that will run, train, and laugh with him.",
-    image: "/images/puppy-thor-upright.jpg",
-    alt: "Thor, a pale merle Border Collie puppy looking up from the patio",
+    image: "/images/puppy-5-bramble.jpg",
+    alt: "Thor, red and lilac merle male Border Collie puppy",
   },
   {
     id: "loki",
@@ -121,8 +109,8 @@ export const puppies: Puppy[] = [
     color: "Red and lilac merle",
     temperament: "Mischief with a good heart. Finds the toy you hid and brings it back.",
     idealHome: "A family that wants a funny, sharp boy and will give him a job.",
-    image: "/images/puppy-loki-upright.jpg",
-    alt: "Loki, a cream Border Collie puppy with blue eyes",
+    image: "/images/puppy-6-wren.jpg",
+    alt: "Loki, red and lilac merle male Border Collie puppy",
   },
 ];
 
@@ -162,9 +150,9 @@ export const storyChapters = [
   {
     year: "2026",
     title: "This litter",
-    image: "/images/hero-puppies-straw.jpeg",
-    alt: "The litter piled together at home",
-    body: "These six puppies were born in our house on August 14, 2026. We hold them every day. The kids help. They will be ready to go home October 9. If one of them is meant for you, write us — we would rather talk than sell a puppy off a webpage.",
+    image: "/images/story-2020.jpg",
+    alt: "Border Collie puppies on a rug with toys in the house",
+    body: "These five puppies were born in our house on August 14, 2026. We hold them every day. The kids help. They will be ready to go home October 9. If one of them is meant for you, write us — we would rather talk than sell a puppy off a webpage.",
   },
 ] as const;
 

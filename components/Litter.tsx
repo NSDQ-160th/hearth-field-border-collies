@@ -24,7 +24,7 @@ export function Litter() {
             <p className="eyebrow">{site.litterMonthYear} Litter</p>
             <h2 className="display">Meet the pups.</h2>
             <p className="lede" style={{ marginTop: "0.85rem" }}>
-              Six puppies born {site.birthDate}. Mom: {site.dam.name}. Dad:{" "}
+              Five puppies born {site.birthDate}. Mom: {site.dam.name}. Dad:{" "}
               {site.sire.name}. Ready to go home {site.goHomeDate}.
             </p>
           </div>
