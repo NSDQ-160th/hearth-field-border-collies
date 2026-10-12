@@ -7,22 +7,22 @@ export function Hero() {
         <div className="hero-mosaic">
           <figure className="tile tile-dam">
             <img
-              src="/images/hero-dam-closeup.jpg"
-              alt="Close-up of Riley, a red merle Border Collie"
+              src="/images/Hero-Dam.jpeg"
+              alt="Riley looking up from the kitchen floor"
             />
             <span className="tile-shade" />
           </figure>
           <figure className="tile tile-pups">
             <img
-              src="/images/hero-puppies-straw.jpg"
-              alt="A pile of Border Collie puppies sleeping together in the house"
+              src="/images/story-2020.jpeg"
+              alt="The litter sleeping together in the house"
             />
             <span className="tile-shade" />
           </figure>
           <figure className="tile tile-field">
             <img
-              src="/images/hero-field.jpg"
-              alt="Falcor, a black and white Border Collie, standing in the yard"
+              src="/images/story-2012.jpeg"
+              alt="Riley and Falcor in the yard by the fence"
             />
             <span className="tile-shade" />
             <div className="hero-headline">
@@ -34,22 +34,22 @@ export function Hero() {
           </figure>
           <figure className="tile tile-hands">
             <img
-              src="/images/hero-hands.jpg"
-              alt="Hands holding a sleepy Border Collie puppy"
+              src="/images/puppy-hero.jpeg"
+              alt="The litter sleeping in a pile"
             />
             <span className="tile-shade" />
           </figure>
           <figure className="tile tile-herd">
             <img
-              src="/images/hero-herding.jpg"
-              alt="Falcor running across the backyard grass"
+              src="/images/story-2018.jpeg"
+              alt="Riley and Falcor by the pool"
             />
             <span className="tile-shade" />
           </figure>
           <figure className="tile tile-certs">
             <img
-              src="/images/hero-certificates.jpg"
-              alt="Vet papers on the kitchen table"
+              src="/images/hero-field.jpeg"
+              alt="Falcor lying on the kitchen floor"
             />
             <span className="tile-shade" />
           </figure>
